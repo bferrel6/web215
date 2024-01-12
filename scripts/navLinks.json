@@ -1,0 +1,48 @@
+{
+    "headerLinks": {
+        "names": [
+            "home",
+            "introduction",
+            "contract"
+            ],
+        "hrefs": [
+            "index.html",
+            "introduction.html",
+            "contract.html"
+            ]
+    },
+    "footerLinks": {
+        "names": [
+            "GitHub",
+            "GitHub.io",
+            "WEB215.io",
+            "freeCodeCamp",
+            "Codecademy",
+            "JSFiddle",
+            "LinkedIn"
+        ],
+        "hrefs": [
+            "https://github.com/bferrel6",
+            "https://bferrel6.github.io",
+            "https://bferrel6.github.io/web215",
+            "https://www.freecodecamp.org/bferrel6",
+            "https://www.codecademy.com/profiles/bferrel6",
+            "https://jsfiddle.net/user/bferrel6/fiddles/",
+            "https://www.linkedin.com/in/benjamin-ferrell-7361301a6"
+        ]
+    },
+    "validationLinks": {
+        "names": [
+            "Validate HTML",
+            "Validate CSS"
+        ],
+        "hrefs": [
+            "http://validator.w3.org/check?uri=referer",
+            "http://jigsaw.w3.org/css-validator/check/referer"
+        ],
+        "ids": [
+            "validation_link_html",
+            "validation_link_css"
+        ]
+    }
+}
