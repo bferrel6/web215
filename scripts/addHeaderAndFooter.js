@@ -78,6 +78,7 @@ function addFooter() {
                 let link = document.createElement("a");
                 link.innerHTML = validationLinks.names[i];
                 link.href = validationLinks.hrefs[i];
+                link.target = "_blank";
                 link.setAttribute("id", validationLinks.ids[i]);
                 validationBlock.append(link);
             }
