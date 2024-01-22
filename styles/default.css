@@ -90,9 +90,10 @@ footer p {
 }
 
 .brandBox ul {
+	text-align: right;
 	font-size: x-large;
 	list-style: none;
-	margin-left: 25%;
+	margin-right: 25%;
 	color: var(--wenge);
 }
 
@@ -100,11 +101,12 @@ footer p {
 .brandBox span {
 	display: inline-block;
 	border: 3px solid var(--columbia-blue);
-	margin: 50px;
+	margin: 10px;
 	padding: 25px;
 }
 
 span.colorSchemeGradient {
+	position: relative;
 	margin: 0;
 	width: 95.64%;
 	background: linear-gradient(90deg, 
@@ -127,6 +129,7 @@ span.colorSchemeGradient {
 .headingExample > h3 {
 	color: var(--columbia-blue);
 	font-size: 90%;
+	margin: 10px;
 }
 
 .textExample {
@@ -158,12 +161,12 @@ nav a {
 header nav {
 	display: inline-block;
 	width: 75%;
+	margin-left: 12px;
 }
 
 header a {
-	margin-left: 2%;
-	padding-left: 9%;
-	padding-right: 9%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 footer nav {
