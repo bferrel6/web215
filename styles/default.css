@@ -96,6 +96,7 @@ footer p {
 	color: var(--wenge);
 }
 
+.brandBox div,
 .brandBox span {
 	display: inline-block;
 	border: 3px solid var(--columbia-blue);
