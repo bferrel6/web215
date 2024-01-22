@@ -3,12 +3,14 @@
         "names": [
             "home",
             "introduction",
-            "contract"
+            "contract",
+            "brand"
             ],
         "hrefs": [
             "index.html",
             "introduction.html",
-            "contract.html"
+            "contract.html",
+            "brand.html"
             ]
     },
     "footerLinks": {

@@ -22,11 +22,9 @@ function addHeader() {
     header.append(h1);
 
     // add banner with slogan - add with brand design?
-    /* 
     const sloganBanner = document.createElement("h3");
-    sloganBanner.innerHTML = "<em>Sail the Stars in Style</em>";
+    sloganBanner.innerHTML = "<em>Let the Fuzz Wash Over You</em>";
     header.append(sloganBanner);
-    */
 
     // add nav container
     const nav = document.createElement("nav");

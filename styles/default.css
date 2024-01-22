@@ -24,6 +24,11 @@ body{
 
 /* text and image styles */ 
 
+header nav,
+header h3 {
+	display: inline-block;
+}
+
 main{
 	display: grid;
 	line-height: 2;
@@ -45,16 +50,14 @@ figcaption{
 	text-align: center;
 }
 
-footer p {
-	text-align: center;
-}
-
 h1, h2, h3{
 	font-family: 'Britannic Bold', serif;
 	color: var(--columbia-blue);
 }
 
-h2 {
+main h1,
+main h2, 
+main h3 {
 	text-align: center;
 }
 
@@ -67,18 +70,105 @@ a:hover {
 	background-color: var(--thistle);
 }
 
+footer p {
+	text-align: center;
+}
+
+/* brand styles */
+
+.brandBox {
+	grid-column-start: span 2;
+	background-color: var(--thistle);
+	border: 3px solid var(--columbia-blue);
+}
+
+.brandBox h1,
+.brandBox h3,
+.brandBox p {
+	color: var(--wenge);
+	margin: 25px;
+}
+
+.brandBox ul {
+	font-size: x-large;
+	list-style: none;
+	margin-left: 25%;
+	color: var(--wenge);
+}
+
+.brandBox span {
+	display: inline-block;
+	border: 3px solid var(--columbia-blue);
+	margin: 50px;
+	padding: 25px;
+}
+
+span.colorSchemeGradient {
+	margin: 0;
+	width: 95.64%;
+	background: linear-gradient(90deg, 
+		var(--columbia-blue) 10%, 
+		var(--azure-web) 30%, 
+		var(--antiflash-white) 50%, 
+		var(--thistle) 70%, 
+		var(--wenge) 90%);
+}
+
+.backgroundExample {
+	background-color: var(--wenge);
+	color: var(--antiflash-white);
+}
+
+.headingExample {
+	background-color: var(--wenge);
+}
+
+.headingExample > h3 {
+	color: var(--columbia-blue);
+	font-size: 90%;
+}
+
+.textExample {
+	background-color: var(--wenge);
+	color: var(--antiflash-white);
+}
+
+.linkExample {
+	background-color: var(--wenge);
+}
+
+.hoverExample {
+	background-color: var(--thistle);
+}
+
 /* navigation styles */
 
 nav {
-	display: flex;
-	text-align: center;
 	margin: 50px auto;
+	text-align: center;
 }
 
 nav a {
-	align-content: center;
 	text-decoration: none;
-	width: 100%;
 	border-left: 2px solid var(--thistle);
 	border-right: 2px solid var(--thistle);
+}
+
+header nav {
+	display: inline-block;
+	width: 75%;
+}
+
+header a {
+	margin-left: 2%;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+footer nav {
+	display: flex;
+}
+
+footer a {
+	width: 100%;
 }
