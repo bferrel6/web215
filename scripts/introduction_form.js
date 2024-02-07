@@ -87,7 +87,7 @@ document.querySelector('button[type="submit"]').onclick = function printIntroduc
     if(photoFile.value) {
         userPhoto.src = URL.createObjectURL(photoFile.files[0])
     } else {
-        userPhoto.src = "../images/jump_cell_small.jpg";
+        userPhoto.src = "images/jump_cell_small.jpg";
     }
     userFigure.appendChild(userPhoto);
     const photoCaption = document.getElementById('photoCaption').value;
