@@ -212,11 +212,6 @@ button {
 	background-color: var(--azure-web);
 }
 
-#userFigure {
-	display: none;
-	position: fixed;
-}
-
 #userPhoto {
 	width: 300px;
 }

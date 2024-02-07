@@ -79,17 +79,23 @@ document.querySelector('button[type="submit"]').onclick = function printIntroduc
     completedForm.style.display = "none";
     
     // load photo and caption & reveal hidden figure element
-    const photoFile = document.getElementById("photoFile")
-    const userPhoto = document.getElementById("userPhoto")
+    const main = document.querySelector('main');
+    const userFigure = document.createElement('figure');
+    const photoFile = document.getElementById('photoFile');
+    const userPhoto = new Image();
+    userPhoto.setAttribute('id', 'userPhoto');
     if(photoFile.value) {
         userPhoto.src = URL.createObjectURL(photoFile.files[0])
+    } else {
+        userPhoto.src = "../images/jump_cell_small.jpg";
     }
-    const photoCaption = document.getElementById("photoCaption").value;
-    const userCaption = document.getElementById("userCaption");
+    userFigure.appendChild(userPhoto);
+    const photoCaption = document.getElementById('photoCaption').value;
+    const userCaption = document.createElement('figcaption');
+    userCaption.setAttribute('id', 'userCaption');
     userCaption.innerText = photoCaption;
-    const photoFigure = document.querySelector('figure[id="userFigure"]');
-    photoFigure.style.display = "inline";
-    photoFigure.style.position = "static";
+    userFigure.appendChild(userCaption);
+    main.append(userFigure);
     
     // create unordered list and add name
     const introduction = document.createElement('ul');
@@ -148,8 +154,7 @@ document.querySelector('button[type="submit"]').onclick = function printIntroduc
     introduction.appendChild(funnyListItem);
 
     // add introduction to main
-    document.querySelector('main').appendChild(introduction);
-
+    main.appendChild(introduction);
 
     return false;
 } 
