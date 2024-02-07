@@ -165,8 +165,8 @@ header nav {
 }
 
 header a {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 footer nav {
@@ -175,4 +175,46 @@ footer nav {
 
 footer a {
 	width: 100%;
+}
+
+/* form styles */
+
+form {
+	margin-left: 30%;
+}
+
+fieldset > div 
+fieldset > ol {
+	width: 100%;
+}
+
+div input,
+textarea {
+	width: 100%;
+	font-family: 'Gill Sans MT Condensed', sans-serif;
+	background-color: var(--antiflash-white);	
+	color: var(--wenge);
+}
+
+div input {
+	font-size: large;
+}
+
+textarea {
+	height: 50px;
+}
+
+button {
+	margin: 15px 15%;
+	font-family: 'Gill Sans MT Condensed', sans-serif;
+	font-size: large;
+	background-color: var(--azure-web);
+}
+
+#userPhoto {
+	width: 300px;
+}
+
+#userCaption {
+	text-align: center;
 }

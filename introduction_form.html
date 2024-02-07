@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ben Ferrell's Brawny Frigatebird | WEB215 | Introduction Form</title>
+	<link rel = "stylesheet" type = "text/css" href = "styles/default.css">
+	<script src="scripts/addHeaderAndFooter.js" defer></script>
+	<script src="scripts/introduction_form.js" defer></script>
+</head>
+
+<body>
+
+	<main>
+		<h2>Four Fuzz Balloons - Introduction Form</h2>
+	<form id="introForm">
+		<fieldset>
+			<legend>Tell us about yourself</legend>
+			<div>
+				<label for="photoFile">Upload a Photo</label>
+				<input name="photoFile" id="photoFile" type="file" accept="image/jpeg, image/png, image/jpg, image/gif">
+			</div>
+			<div>
+				<label for="photoCaption">Give Your Photo a Caption</label>
+				<input name="photoCaption" id="photoCaption" type="text" placeholder="what is it a picture of?">
+			</div>
+			<div>
+				<label for="introName">Name</label>
+				<input name="introName" id="introName" type="text" autofocus required>
+			</div>	
+			<div>
+				<label for="personalBG">Personal Background</label>
+				<textarea name="personalBG" id="personalBG"></textarea>
+			</div>
+			<div>
+				<label for="professionalBG">Professional Background</label>
+				<textarea name="professionalBG" id="professionalBG"></textarea>
+			</div>
+			<div>
+				<label for="academicBG">Academic Background</label>
+                <textarea name="academicBG" id="academicBG"></textarea>
+			</div>
+			<div>
+				<label for="subjectBG">Background In This Subject</label>
+				<textarea name="subjectBG" id="subjectBG"></textarea>
+			</div>
+			<div>
+				<label for="computerPlatform">Primary Computer Platform</label>
+				<input name="computerPlatform" id="computerPlatform" type="text">
+			</div>
+			<fieldset id="courseInputs">
+				<legend for="courseCount">Number of courses</label>
+				<input type="radio" id="1course" name="courseCount" value="1">
+				<label for="1course">1</label>
+				<input type="radio" id="2courses" name="courseCount" value="2">
+				<label for="2courses">2</label>
+				<input type="radio" id="3courses" name="courseCount" value="3">
+				<label for="3courses">3</label>
+				<input type="radio" id="4courses" name="courseCount" value="4" checked>
+				<label for="4courses">4</label>
+				<input type="radio" id="5courses" name="courseCount" value="5">
+				<label for="5courses">5</label>
+				<legend>What courses are you taking?</legend>
+			</fieldset>		
+			<fieldset>
+				<legend for="languages">Languages you are learning</label>
+				<input type="checkbox" id="html-lang" name="languages" value="HTML" checked>
+				<label for="html-lang">HTML</label>
+				<input type="checkbox" id="css-lang" name="languages" value="CSS" checked>
+				<label for="css-lang">CSS</label>
+				<input type="checkbox" id="js-lang" name="languages" value="JavaScript" checked>
+				<label for="js-lang">JavaScript</label>
+				<input type="checkbox" id="php-lang" name="languages" value="PHP" checked>
+				<label for="php-lang">PHP</label>
+				<input type="checkbox" id="sql-lang" name="languages" value="SQL" checked>
+				<label for="sql-lang">SQL</label>
+				<input type="checkbox" id="python-lang" name="languages" value="Python" checked>
+				<label for="python-lang">Python</label>
+			</fieldset>
+			<div>
+				<label for="funnyItem">Funny/Interesting Item to Remember you by:</label>
+				<textarea name="funnyItem" id="funnyItem"></textarea>
+			</div>
+		</fieldset>
+		<button type="submit">Submit Your Introduction</button>
+		<button type="reset">Reset Form</button>
+	</form>
+
+		<figure display="none" style="position:fixed;">
+			<img id="userPhoto">
+			<figcaption id="userCaption"></figcaption>
+		</figure>
+
+	</main>
+	
+</body>
+</html>
