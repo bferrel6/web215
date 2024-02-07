@@ -111,8 +111,6 @@ document.querySelector('button[type="submit"]').onclick = function printIntroduc
     }
     let backgroundTitles = Object.keys(userBackground);
     let backgroundInfo = Object.values(userBackground);
-    console.log(backgroundTitles)
-    console.log(backgroundInfo)
     for (let i = 0; i < backgroundInfo.length; i++) {
         let bgListItem = document.createElement("li");
         bgListItem.innerHTML = `<strong>${backgroundTitles[i]}</strong> ${backgroundInfo[i]}`;
