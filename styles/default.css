@@ -180,7 +180,8 @@ footer a {
 /* form styles */
 
 form {
-	margin-left: 30%;
+	margin-left: 25%;
+	margin-right: -25%;
 }
 
 fieldset > div 
@@ -209,6 +210,11 @@ button {
 	font-family: 'Gill Sans MT Condensed', sans-serif;
 	font-size: large;
 	background-color: var(--azure-web);
+}
+
+#userFigure {
+	display: none;
+	position: fixed;
 }
 
 #userPhoto {

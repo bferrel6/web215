@@ -87,7 +87,7 @@ document.querySelector('button[type="submit"]').onclick = function printIntroduc
     const photoCaption = document.getElementById("photoCaption").value;
     const userCaption = document.getElementById("userCaption");
     userCaption.innerText = photoCaption;
-    const photoFigure = document.querySelector("figure");
+    const photoFigure = document.querySelector('figure[id="userFigure"]');
     photoFigure.style.display = "inline";
     photoFigure.style.position = "static";
     

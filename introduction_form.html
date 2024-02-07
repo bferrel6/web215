@@ -48,7 +48,7 @@
 				<input name="computerPlatform" id="computerPlatform" type="text">
 			</div>
 			<fieldset id="courseInputs">
-				<legend for="courseCount">Number of courses</label>
+				<legend>Number of courses</legend>
 				<input type="radio" id="1course" name="courseCount" value="1">
 				<label for="1course">1</label>
 				<input type="radio" id="2courses" name="courseCount" value="2">
@@ -59,10 +59,10 @@
 				<label for="4courses">4</label>
 				<input type="radio" id="5courses" name="courseCount" value="5">
 				<label for="5courses">5</label>
-				<legend>What courses are you taking?</legend>
+				<div>What courses are you taking?</div>
 			</fieldset>		
 			<fieldset>
-				<legend for="languages">Languages you are learning</label>
+				<legend>Languages you are learning</legend>
 				<input type="checkbox" id="html-lang" name="languages" value="HTML" checked>
 				<label for="html-lang">HTML</label>
 				<input type="checkbox" id="css-lang" name="languages" value="CSS" checked>
@@ -85,8 +85,8 @@
 		<button type="reset">Reset Form</button>
 	</form>
 
-		<figure display="none" style="position:fixed;">
-			<img id="userPhoto">
+		<figure id="userFigure">
+			<img id="userPhoto" alt="user photo" src="">
 			<figcaption id="userCaption"></figcaption>
 		</figure>
 
