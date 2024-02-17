@@ -23,7 +23,7 @@ function addHeader() {
 
     // add banner with slogan - add with brand design?
     const sloganBanner = document.createElement("h3");
-    sloganBanner.innerHTML = "<em>Let the Fuzz Wash Over You</em>";
+    sloganBanner.innerHTML = "<em>A Salty Sea Breeze of Sound</em>";
     header.append(sloganBanner);
 
     // add nav container

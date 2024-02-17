@@ -16,7 +16,7 @@ body{
 	font-size: 175%;
 	color: var(--antiflash-white);	
 	background: var(--wenge);
-	min-width: 480px;
+	min-width: 800px;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -34,7 +34,7 @@ header h1 {
 }
 
 header h3 {
-	margin: 5px 0px 5px 55%;
+	margin: 5px 5% 5px 57.5%;
 }
 
 main h2,
