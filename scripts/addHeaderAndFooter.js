@@ -58,12 +58,6 @@ function addFooter() {
         })
         .catch(error => console.log(error))  
 
-    // add signature
-    const sigContent = `Designed by <strong>&copy;Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
-    const signature = document.createElement("p");
-    signature.innerHTML = sigContent;
-    footer.append(signature);
-
     // add validation block
     const validationBlock = document.createElement("nav");
     footer.append(validationBlock);
@@ -85,6 +79,12 @@ function addFooter() {
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         })
         .catch(error => console.log(error))
+    
+     // add signature
+    const sigContent = `Designed by <strong>&copy;Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
+    const signature = document.createElement("p");
+    signature.innerHTML = sigContent;
+    footer.append(signature);
 }
 
 window.onload = 

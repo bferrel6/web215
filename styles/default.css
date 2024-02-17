@@ -13,7 +13,7 @@
 body{
 	font-family: 'Gill Sans MT Condensed', sans-serif;
 	font-weight: 200;
-	font-size: 125%;
+	font-size: 175%;
 	color: var(--antiflash-white);	
 	background: var(--wenge);
 	min-width: 480px;
@@ -24,14 +24,17 @@ body{
 
 /* text and image styles */ 
 
-header nav,
-header h3 {
-	display: inline-block;
-}
-
 main{
 	display: grid;
 	line-height: 2;
+}
+
+header h1 {
+	margin: 5px auto;
+}
+
+header h3 {
+	margin: 5px 0px 5px 55%;
 }
 
 main h2,
@@ -53,12 +56,13 @@ figcaption{
 h1, h2, h3{
 	font-family: 'Britannic Bold', serif;
 	color: var(--columbia-blue);
+	text-align: center;
 }
 
 main h1,
 main h2, 
 main h3 {
-	text-align: center;
+	margin: 10px auto;
 }
 
 a {
@@ -78,14 +82,12 @@ footer p {
 
 .brandBox {
 	grid-column-start: span 2;
-	background-color: var(--thistle);
-	border: 3px solid var(--columbia-blue);
+	border: 3px solid var(--thistle);
 }
 
 .brandBox h1,
 .brandBox h3,
 .brandBox p {
-	color: var(--wenge);
 	margin: 25px;
 }
 
@@ -94,7 +96,6 @@ footer p {
 	font-size: x-large;
 	list-style: none;
 	margin-right: 25%;
-	color: var(--wenge);
 }
 
 .brandBox div,
@@ -143,38 +144,24 @@ span.colorSchemeGradient {
 
 .hoverExample {
 	background-color: var(--thistle);
+	color: var(--wenge);
 }
 
 /* navigation styles */
 
 nav {
-	margin: 50px auto;
 	text-align: center;
+	display: flex;
+	margin: 25px auto;
 }
 
 nav a {
 	text-decoration: none;
-	border-left: 2px solid var(--thistle);
-	border-right: 2px solid var(--thistle);
-}
-
-header nav {
-	display: inline-block;
-	width: 75%;
-	margin-left: 12px;
-}
-
-header a {
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-footer nav {
-	display: flex;
-}
-
-footer a {
 	width: 100%;
+}
+
+a:not(:first-of-type)  {
+	border-left: 2px solid var(--thistle);
 }
 
 /* form styles */
