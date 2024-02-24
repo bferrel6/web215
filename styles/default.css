@@ -50,6 +50,10 @@ main figure{
 	margin-left: 50px;	
 }
 
+figure img {
+	margin-left: 10%;
+}
+
 figcaption{
 	font-style: italic;
 	text-align: center;
