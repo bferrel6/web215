@@ -27,6 +27,8 @@ body{
 main{
 	display: grid;
 	line-height: 2;
+	border: 3px solid var(--thistle);
+	padding: 0 5px;
 }
 
 header h1 {
@@ -53,7 +55,7 @@ figcaption{
 	text-align: center;
 }
 
-h1, h2, h3{
+h1, h2, h3, h5{
 	font-family: 'Britannic Bold', serif;
 	color: var(--columbia-blue);
 	text-align: center;
@@ -61,8 +63,9 @@ h1, h2, h3{
 
 main h1,
 main h2, 
-main h3 {
-	margin: 10px auto;
+main h3, 
+main h5 {
+	margin: -10px auto;
 }
 
 a {
@@ -82,7 +85,7 @@ footer p {
 
 .brandBox {
 	grid-column-start: span 2;
-	border: 3px solid var(--thistle);
+	
 }
 
 .brandBox h1,
@@ -108,8 +111,7 @@ footer p {
 
 span.colorSchemeGradient {
 	position: relative;
-	margin: 0;
-	width: 95.64%;
+	width: 94%;
 	background: linear-gradient(90deg, 
 		var(--columbia-blue) 10%, 
 		var(--azure-web) 30%, 
@@ -168,7 +170,11 @@ a:not(:first-of-type)  {
 
 form {
 	margin-left: 25%;
-	margin-right: -25%;
+	margin-right: -10%;
+}
+
+fieldset {
+	border: none;
 }
 
 fieldset > div 

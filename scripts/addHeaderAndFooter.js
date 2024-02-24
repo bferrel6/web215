@@ -81,7 +81,7 @@ function addFooter() {
         .catch(error => console.log(error))
     
      // add signature
-    const sigContent = `Designed by <strong>&copy;Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
+    const sigContent = `Designed by <strong>Mithril WebForge</strong> - <em>Renowned Across the Multiverse</em>`;
     const signature = document.createElement("p");
     signature.innerHTML = sigContent;
     footer.append(signature);
