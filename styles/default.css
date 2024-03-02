@@ -6,8 +6,8 @@
 	--columbia-blue: #c9f0ffff;
 	--azure-web: #eafffdff;
 	--antiflash-white: #efeff0ff;
-	--thistle: #d5cad6ff;
-	--wenge: #6b5e62ff;
+	--thistle: #E8E3E8ff; /* original d5cad6 */
+	--wenge: #4E4648ff; /* original #6b5e56 */
 }
 
 body{
